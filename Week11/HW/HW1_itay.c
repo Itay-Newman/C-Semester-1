@@ -1,13 +1,15 @@
 #include <stdio.h>
 
-int main() {
+int main() 
+{
     int arr[5] = {0};
     int i;
     int offset;
 
     // Fill array with 5 numbers from user
     printf("Enter 5 numbers: ");
-    for(i = 0; i < 5; i++) {
+    for(i = 0; i < 5; i++) 
+    {
         scanf("%d", &arr[i]);
     }
 
@@ -17,7 +19,8 @@ int main() {
 
     // Print array with offset
     printf("Array with offset %d: ", offset);
-    for(i = 0; i < 5; i++) {
+    for(i = 0; i < 5; i++) 
+    {
         printf("%d ", arr[(i + offset) % 5]);
     }
 
