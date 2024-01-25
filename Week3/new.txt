@@ -1,0 +1,8 @@
+#include <stdio.h>
+int main()
+{
+	int celsius = 30;
+	float fahrnheit = (9.0/5 * celsius) + 32;
+	
+	printf("%d C° is %f F°", celsius, fahrnheit);
+}

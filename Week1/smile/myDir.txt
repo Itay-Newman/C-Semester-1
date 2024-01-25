@@ -1,0 +1,12 @@
+ Volume in drive C is Windows
+ Volume Serial Number is F2ED-A87B
+
+ Directory of C:\Users\Cyber_User\Documents\Magshimim\C1\Week1\smile
+
+11/10/2023  02:44 AM    <DIR>          .
+11/10/2023  02:38 AM    <DIR>          ..
+11/10/2023  02:41 AM    <DIR>          i love cyber
+11/10/2023  02:44 AM                 0 myDir.txt
+11/10/2023  02:41 AM    <DIR>          pancake
+               1 File(s)              0 bytes
+               4 Dir(s)  351,010,238,464 bytes free
