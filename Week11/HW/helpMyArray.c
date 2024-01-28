@@ -9,16 +9,16 @@
 
 #define ARR_LENGTH 2
 
-int[] initArray(int arr[]);
+void initArray(int arr[]);
 void printGrades(int first, int second);
 
 int main(void)
 {
-	int myGrades[] = {0,0};
+	int myGrades[ARR_LENGTH] = {0};
+
+	initArray(myGrades);
 	
-	myGrades = initArray(myGrades);
-	
-	int first = myGrades;
+	int first = myGrades[0];
 	int second = myGrades[1];	
 	
 	printGrades(first, second);
@@ -30,11 +30,10 @@ Function will change values of array (input from user)
 input: array to change
 output: fixed array
 */
-int[] initArray(int arr[])
+void initArray(int arr[])
 {
 	printf("Enter grades in English and history: ");
 	scanf("%d %d", &arr[0], &arr[1]);
-	return arr;
 }
 
 /*
