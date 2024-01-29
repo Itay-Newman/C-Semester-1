@@ -3,5 +3,8 @@
 int main(void)
 {
     char bob[] = "bob marley";
-    printf("%s\n", bob);
+    for(int i = 0; bob[i]; i++)
+    {
+        printf("%c", bob[i]);
+    }
 }
