@@ -2,24 +2,28 @@
 #include <string.h>
 
 // Function to convert an integer to a string
-void intToString(int number, char str[]) {
+void intToString(int number, char str[]) 
+{
     int index = 0;
     int temp = (number >= 0) ? number : -number;
 
     // Handle the case when the number is 0 separately
-    if (temp == 0) {
+    if (temp == 0) 
+    {
         str[index++] = '0';
     }
 
     // Extract digits and build the string in reverse order
-    while (temp > 0) {
+    while (temp > 0) 
+    {
         int digit = temp % 10;
         str[index++] = '0' + digit;
         temp /= 10;
     }
 
     // Add the minus sign if the number is negative
-    if (number < 0) {
+    if (number < 0) 
+    {
         str[index++] = '-';
     }
 
@@ -27,14 +31,16 @@ void intToString(int number, char str[]) {
     str[index] = '\0';
 
     // Reverse the string
-    for (int i = 0; i < index / 2; i++) {
+    for (int i = 0; i < index / 2; i++) 
+    {
         char tempChar = str[i];
         str[i] = str[index - i - 1];
         str[index - i - 1] = tempChar;
     }
 }
 
-int main() {
+int main() 
+{
     int number;
     char str[20]; // Assuming a maximum length of 20 for the string
 
