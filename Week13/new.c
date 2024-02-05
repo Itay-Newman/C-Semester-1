@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 
 #define COLS 8
 #define ROWS 8
