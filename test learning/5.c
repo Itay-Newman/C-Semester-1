@@ -5,7 +5,7 @@ int isPrime(int num);
 int main(void)
 {
     int num = 0;
-    printf("enter a number");
+    printf("enter a number: \n");
     scanf("%d", &num);
 
     if(isPrime(num) == 0)
@@ -23,13 +23,22 @@ int main(void)
 int isPrime(int num)
 {
     int i;
-    int answer = 0;
-    for (i = 2; i < num; i++)
+    int isPrime = 1;
+
+    if (num <= 1)
     {
-        if (num % i != 0)
+        isPrime = 0;
+    }
+    else
+    {
+        for (i = 2; i * i <= num; i++)
         {
-             answer = 1;
+            if (num % i == 0)
+            {
+                isPrime = 0;
+                break;
+            }
         }
     }
-    return answer;
+    return isPrime;
 }
